@@ -18,12 +18,12 @@ public:
 	virtual ~GenericEthernet();
 
 	virtual bool connect()=0;
-	virtual bool push(int value)=0;
-	virtual bool push(float value)=0;
-	//virtual bool push(int value)=0;
-	//virtual bool push(int value)=0;
-	//virtual bool push(int value)=0;
-	virtual bool pushKeyValue(char* key, char* value);
+	virtual bool Post(int value)=0;
+	virtual bool Post(float value)=0;
+	//virtual bool Post(int value)=0;
+	//virtual bool Post(int value)=0;
+	//virtual bool Post(int value)=0;
+	virtual bool postKeyValue(char* key, char* value);
 };
 
 } /* namespace yeelink */

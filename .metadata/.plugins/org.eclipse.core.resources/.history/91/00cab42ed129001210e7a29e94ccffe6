@@ -1,0 +1,73 @@
+/*
+ * ylclient.cpp
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ */
+
+#include "ylclient.h"
+
+namespace yeelink {
+
+ylclient::ylclient() {
+	// TODO Auto-generated constructor stub
+	_connected = false;
+	apikey=0;
+}
+
+ylclient::~ylclient() {
+	// TODO Auto-generated destructor stub
+}
+
+bool ylclient::connect(char * APIKey)
+{
+
+	return 0;
+}
+
+bool ylclient::connect()
+{
+
+	return 0;
+}
+
+bool ylclient::connected()
+{
+
+	return 0;
+}
+
+void ylclient::setAPIKey(char* APIKey)
+{
+
+}
+
+void ylclient::setNETCardParam(char* mac, char* ip)
+{
+
+}
+
+
+bool ylclient::publish(int value)
+{
+
+	return 0;
+}
+
+bool ylclient::publish(char* value)
+{
+
+}
+
+bool ylclient::publish(float value)
+{
+
+}
+
+bool ylclient::publish(bool value)
+{
+
+}
+
+} /* namespace yeelink */
+

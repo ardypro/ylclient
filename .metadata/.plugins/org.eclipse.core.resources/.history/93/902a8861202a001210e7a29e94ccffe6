@@ -1,0 +1,32 @@
+/*
+ * baseNetcard.h
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ *
+ *      网卡基类
+ */
+
+#ifndef BASENETCARD_H_
+#define BASENETCARD_H_
+
+#include "ylconst.h"
+
+namespace yeelink {
+
+class baseNetcard {
+private:
+	byte mac[6];
+	byte ip[6];
+	byte port;
+	byte serialIndex;
+public:
+	baseNetcard();
+	virtual ~baseNetcard();
+
+
+
+};
+
+} /* namespace yeelink */
+#endif /* BASENETCARD_H_ */

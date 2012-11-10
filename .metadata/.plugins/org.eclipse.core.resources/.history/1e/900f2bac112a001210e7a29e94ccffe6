@@ -1,0 +1,21 @@
+/*
+ * ylconst.h
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ */
+
+#ifndef YLCONST_H_
+#define YLCONST_H_
+
+enum NETWORKCARD {
+	W5100, ENC28J60
+};
+
+const int ERR_INVALID_APIKEY       = 1;
+const int ERR_SERVER_NOT_AVAILABLE = 2;
+const int ERR_SERVER_BUSY = 3;
+const int ERR_INVALID_DEVICE_ID = 11;
+const int ERR_INVALID_SENSOR_ID = 12;
+
+#endif /* YLCONST_H_ */

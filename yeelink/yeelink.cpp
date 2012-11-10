@@ -22,5 +22,5 @@ void setup()
 void loop()
 {
 //Add your repeated code here
-	client.push(23);
+	client.Post(23);
 }

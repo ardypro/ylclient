@@ -1,0 +1,7 @@
+Arduino\ Board=Arduino Duemilanove w/ ATmega328
+Arduino\ IDE\ Version=1.0
+Arduino\ Path=/usr/share/arduino
+Arduino\ Port=/dev/ttyUSB1
+Private\ Library\ Path=/home/ardypro/\u6587\u6863/projects/yee
+Use\ Arduino\ IDE\ Tools=true
+eclipse.preferences.version=1

@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+pathvariable.ArduinoLibPath=/usr/share/arduino/libraries
+pathvariable.CoreArduinoPath=/usr/share/arduino/hardware/arduino/cores
+pathvariable.PinArduinoPath=/usr/share/arduino/hardware/arduino/variants
+pathvariable.PivateLibPath=/home/ardypro/\u6587\u6863/projects/yee
+version=1

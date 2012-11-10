@@ -1,0 +1,77 @@
+/*
+ * ylclient.cpp
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ */
+
+#include "ylclient.h"
+
+namespace yeelink {
+
+ylclient::ylclient() {
+	// TODO Auto-generated constructor stub
+	_connected = false;
+	apikey=0;
+}
+
+ylclient::~ylclient() {
+	// TODO Auto-generated destructor stub
+}
+
+bool ylclient::connect(char * APIKey)
+{
+	apikey=&APIKey;
+	return 0;
+}
+
+bool ylclient::connect()
+{
+
+	return 0;
+}
+
+bool ylclient::connected()
+{
+	//注意，目前这里没有实时获取连接状态，因此有可能在服务器端断开连接直接之后，本地端的状态变量依然是连接
+
+	return _connected;
+}
+
+void ylclient::setAPIKey(char* APIKey)
+{
+
+}
+
+void ylclient::setNETCardParam(char* mac, char* ip)
+{
+
+}
+
+
+bool ylclient::publish(int value)
+{
+
+	return 0;
+}
+
+bool ylclient::publish(char* value)
+{
+
+	return 0;
+}
+
+bool ylclient::publish(float value)
+{
+
+	return 0;
+}
+
+bool ylclient::publish(bool value)
+{
+
+	return 0;
+}
+
+} /* namespace yeelink */
+

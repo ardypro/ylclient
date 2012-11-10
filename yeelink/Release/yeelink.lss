@@ -11,7 +11,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
   3 .stab         000076c8  00000000  00000000  00000e44  2**2
                   CONTENTS, READONLY, DEBUGGING
-  4 .stabstr      0000c754  00000000  00000000  0000850c  2**0
+  4 .stabstr      0000c759  00000000  00000000  0000850c  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -108,7 +108,7 @@ Disassembly of section .text:
 void loop()
 {
 //Add your repeated code here
-	client.push(23);
+	client.Post(23);
 }
   c2:	81 30       	cpi	r24, 0x01	; 1
   c4:	91 05       	cpc	r25, r1
@@ -173,12 +173,12 @@ void setup()
 void loop()
 {
 //Add your repeated code here
-	client.push(23);
+	client.Post(23);
  10e:	86 e6       	ldi	r24, 0x66	; 102
  110:	91 e0       	ldi	r25, 0x01	; 1
  112:	67 e1       	ldi	r22, 0x17	; 23
  114:	70 e0       	ldi	r23, 0x00	; 0
- 116:	0e 94 c9 00 	call	0x192	; 0x192 <_ZN7yeelink8ylclient4pushEi>
+ 116:	0e 94 c9 00 	call	0x192	; 0x192 <_ZN7yeelink8ylclient4PostEi>
 }
  11a:	08 95       	ret
 
@@ -294,10 +294,10 @@ bool ylclient::connect() {
  18e:	84 2f       	mov	r24, r20
  190:	08 95       	ret
 
-00000192 <_ZN7yeelink8ylclient4pushEi>:
+00000192 <_ZN7yeelink8ylclient4PostEi>:
 }
 
-bool ylclient::push(int value) {
+bool ylclient::Post(int value) {
 
 	return 0;
 }

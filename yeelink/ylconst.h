@@ -9,6 +9,8 @@
 #define YLCONST_H_
 
 #include "stdint.h"
+
+
 typedef uint8_t byte;
 
 //网络模块类型，最后一种是串口转HTTP代理工具

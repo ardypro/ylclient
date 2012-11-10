@@ -54,22 +54,22 @@ void ylclient::setEthernetCardParam(char* mac, char* ip) {
 
 }
 
-bool ylclient::push(int value) {
+bool ylclient::Post(int value) {
 
 	return 0;
 }
 
-bool ylclient::push(char* value) {
+bool ylclient::Post(char* value) {
 
 	return 0;
 }
 
-bool ylclient::push(float value) {
+bool ylclient::Post(float value) {
 
 	return 0;
 }
 
-bool ylclient::push(bool value) {
+bool ylclient::Post(bool value) {
 
 	return 0;
 }

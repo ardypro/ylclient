@@ -1,0 +1,23 @@
+/*
+ * baseNetcard.cpp
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ */
+
+#include "baseNetcard.h"
+
+namespace yeelink {
+
+baseNetcard::baseNetcard() {
+	// TODO Auto-generated constructor stub
+
+}
+
+baseNetcard::~baseNetcard() {
+	// TODO Auto-generated destructor stub
+}
+
+
+
+} /* namespace yeelink */

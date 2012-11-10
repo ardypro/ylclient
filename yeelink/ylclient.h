@@ -58,10 +58,10 @@ public:
 	bool setActiveSensor(int sensorid);
 
 	//发布数据方法
-	bool push(int value);
-	bool push(float value);
-	bool push(bool value);
-	bool push(char* value);
+	bool Post(int value);
+	bool Post(float value);
+	bool Post(bool value);
+	bool Post(char* value);
 
 
 };

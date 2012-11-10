@@ -64,7 +64,7 @@ all: yeelink.elf secondary-outputs
 yeelink.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C++ Linker'
-	avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/yee/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm
+	avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 

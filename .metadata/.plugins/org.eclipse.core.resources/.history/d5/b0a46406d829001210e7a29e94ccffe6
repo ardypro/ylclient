@@ -1,0 +1,46 @@
+/*
+ * ylclient.h
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ *
+ *
+ *      yeelink.net服务的客户端类库
+ *
+ */
+
+#ifndef YLCLIENT_H_
+#define YLCLIENT_H_
+#include "WString.h"
+
+namespace yeelink {
+
+class ylclient {
+private:
+	char* apikey;
+
+	bool _connected;
+public:
+	ylclient();
+	virtual ~ylclient();
+
+	bool connect();					//连接到服务器，需要实现给APIKEY赋值
+	bool connect(char* APIkey);	//连接到服务器
+	void disconnect();				//断开与服务器的连接
+	bool connected();				//连接状态
+
+	void setAPIKey(char* APIKey);	//设置APIKEY
+
+	//设置网卡参数
+	void setNETCardParam(char* mac, char* ip);
+
+	//发布数据方法
+	bool push(int value);
+	bool push(float value);
+	bool push(bool value);
+	bool push(char* value);
+
+};
+
+} /* namespace yeelink */
+#endif /* YLCLIENT_H_ */

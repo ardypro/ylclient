@@ -1,0 +1,20 @@
+/*
+ * genericethernet.h
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ */
+
+#ifndef GENERICETHERNET_H_
+#define GENERICETHERNET_H_
+
+namespace yeelink {
+
+class genericethernet {
+public:
+	genericethernet();
+	virtual ~genericethernet();
+};
+
+} /* namespace yeelink */
+#endif /* GENERICETHERNET_H_ */

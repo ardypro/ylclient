@@ -1,0 +1,45 @@
+/*
+ * ylclient.cpp
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ */
+
+#include "ylclient.h"
+
+namespace yeelink {
+
+ylclient::ylclient() {
+	// TODO Auto-generated constructor stub
+	_connected = false;
+	apikey=0;
+}
+
+ylclient::~ylclient() {
+	// TODO Auto-generated destructor stub
+}
+
+bool ylclient::connect(char * APIKey)
+{
+
+}
+
+bool ylclient::connect()
+{
+
+}
+
+bool ylclient::connected()
+{
+
+}
+
+bool ylclient::publish(int value)
+{
+
+	return 0;
+}
+
+
+} /* namespace yeelink */
+

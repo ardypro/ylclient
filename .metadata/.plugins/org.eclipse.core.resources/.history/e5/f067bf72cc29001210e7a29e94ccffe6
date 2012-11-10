@@ -1,0 +1,14 @@
+/*
+ * ylconst.h
+ *
+ *  Created on: 2012-11-9
+ *      Author: ardypro
+ */
+
+#ifndef YLCONST_H_
+#define YLCONST_H_
+
+enum NETWORKCARD {W5100, ENC28J60}
+
+
+#endif /* YLCONST_H_ */
