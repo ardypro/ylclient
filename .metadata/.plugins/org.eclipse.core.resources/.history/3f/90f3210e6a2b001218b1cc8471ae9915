@@ -3,8 +3,6 @@
  *
  *  Created on: 2012-11-9
  *      Author: ardypro
- *
- *      2012-11-11	添加发布整数/浮点数/布尔值/字符串功能
  */
 
 #include "ylclient.h"
@@ -37,7 +35,7 @@ bool ylclient::connect() {
 		return 0;
 	} else {
 
-		return 0;
+		return 1;
 	}
 }
 

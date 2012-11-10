@@ -18,7 +18,7 @@ void setup()
 	//client.setAPIVersion("v1.0");	//设置API版本，除非特别制定，采用默认的v1.0版本
 
 	if(! client.connect())
-		Serial.println("could not access remote server!");
+		Serial.println("无法连接到服务器");
 }
 
 // The loop function is called in an endless loop

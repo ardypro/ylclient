@@ -6,23 +6,21 @@ extern HardwareSerial Serial;
 using namespace yeelink;
 
 ylclient client;
-
+String apikey="89501b438791e28f74c21035a88fffd2";
 
 
 //The setup function is called once at startup of the sketch
 void setup()
 {
+// Add your initialization code here
 	Serial.begin(9600);
-	//初始化yeelink client
-	//client.setAPIKey("apikey");	//设置API key，这里采用默认的key
-	//client.setAPIVersion("v1.0");	//设置API版本，除非特别制定，采用默认的v1.0版本
-
-	if(! client.connect())
-		Serial.println("could not access remote server!");
+	//client.setAPIKey(apikey);
+	client.connect();
 }
 
 // The loop function is called in an endless loop
 void loop()
 {
+//Add your repeated code here
 	client.Post(23);
 }
