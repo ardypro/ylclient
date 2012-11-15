@@ -1,4 +1,4 @@
-03:26:56 **** Incremental Build of configuration Release for project Arduino_Duemilanove_w__ATmega328 ****
+11:00:18 **** Incremental Build of configuration Release for project Arduino_Duemilanove_w__ATmega328 ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega328p libArduino_Duemilanove_w__ATmega328.a
@@ -202,16 +202,30 @@ Data:          0 bytes (0.0% Full)
 
 Finished building: sizedummy
  
-03:26:57 **** Incremental Build of configuration Release for project yeelink ****
+11:00:19 **** Incremental Build of configuration Release for project yeelink ****
 make all 
+Building file: ../SerialHTTP.cpp
+../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(int)’:
+../SerialHTTP.cpp:36:1: warning: no return statement in function returning non-void
+../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(float)’:
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"SerialHTTP.d" -MT"SerialHTTP.d"  -c -o "SerialHTTP.o" -x c++ "../SerialHTTP.cpp"
+Finished building: ../SerialHTTP.cpp
+../SerialHTTP.cpp:40:1: warning: no return statement in function returning non-void
+ 
 Building file: ../yeelink.cpp
 Invoking: AVR C++ Compiler
 avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"yeelink.d" -MT"yeelink.d"  -c -o "yeelink.o" -x c++ "../yeelink.cpp"
 Finished building: ../yeelink.cpp
  
+Building file: ../ylclient.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylclient.d" -MT"ylclient.d"  -c -o "ylclient.o" -x c++ "../ylclient.cpp"
+Finished building: ../ylclient.cpp
+ 
 Building target: yeelink.elf
 Invoking: AVR C++ Linker
-avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./GenericEthernet.o ./yeelink.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
+avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./GenericEthernet.o ./SerialHTTP.o ./yeelink.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
 Finished building target: yeelink.elf
  
 Invoking: AVR Create Extended Listing
@@ -232,10 +246,10 @@ AVR Memory Usage
 ----------------
 Device: atmega328p
 
-Program:    2780 bytes (8.5% Full)
+Program:    2784 bytes (8.5% Full)
 (.text + .data + .bootloader)
 
-Data:        295 bytes (14.4% Full)
+Data:        297 bytes (14.5% Full)
 (.data + .bss + .noinit)
 
 

@@ -18,6 +18,7 @@ GenericEthernet::~GenericEthernet() {
 	// TODO Auto-generated destructor stub
 }
 
+
 //virtual bool  GenericEthernet::connect()
 //{
 //

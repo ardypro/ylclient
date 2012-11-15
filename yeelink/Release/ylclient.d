@@ -1,6 +1,6 @@
 ylclient.d ylclient.o: ../ylclient.cpp ../ylclient.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/WString.h ../ylconst.h \
- ../GenericEthernet.h
+ ../GenericEthernet.h ../SerialHTTP.h
 
 ../ylclient.h:
 
@@ -9,3 +9,5 @@ ylclient.d ylclient.o: ../ylclient.cpp ../ylclient.h \
 ../ylconst.h:
 
 ../GenericEthernet.h:
+
+../SerialHTTP.h:

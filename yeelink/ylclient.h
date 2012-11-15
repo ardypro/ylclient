@@ -31,7 +31,7 @@ private:
 	int _ipaddr[];
 	int _serialIndex;
 
-	//GenericEthernet* net;			//定义一个虚拟网卡变量
+	GenericEthernet* net;			//定义一个虚拟网卡变量
 
 public:
 	ylclient();
@@ -51,6 +51,8 @@ public:
 	void setEthernetCardParam(char* mac, char* ip);
 	void setEthernetCardParam(String mac, String ip);
 	void setEthernetCardParam(int serialindex);			//仅对使用串口代理方式有效
+
+	//设置网卡类型
 	void setEthernetCardType(ETHERNETCARD cardType);
 
 	//设置设备与传感器

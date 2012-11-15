@@ -15,7 +15,7 @@ void setup()
 	Serial.begin(9600);
 	//初始化yeelink client
 	//client.setAPIKey("apikey");	//设置API key，这里采用默认的key
-	//client.setAPIVersion("v1.0");	//设置API版本，除非特别制定，采用默认的v1.0版本
+	//client.setAPIVersion("v1.0");	//设置API版本，除非yeelink API升级，则采用默认的v1.0版本
 
 	if(! client.connect())
 		Serial.println("could not access remote server!");

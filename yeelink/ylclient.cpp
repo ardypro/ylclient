@@ -8,6 +8,10 @@
  */
 
 #include "ylclient.h"
+#include "ylconst.h"
+//#ifdef SERIALPROXY
+#include "SerialHTTP.h"
+//#endif
 
 namespace yeelink {
 
@@ -15,11 +19,11 @@ ylclient::ylclient() {
 	// TODO Auto-generated constructor stub
 	this->_connected = false;
 	this->_apikey = (char*) "89501b438791e28f74c21035a88fffd2";	//TODO 发布时要取消
-	this->_cardtype = W5100;
+	this->_cardtype = SERIALOVERHTTP;
 	this->_apiver = (char*) "v1.0";
 	this->_activedeviceid = 0;
 	this->_activesensorid = 0;
-	this->_serialIndex=1;
+	this->_serialIndex = 1;
 
 }
 
@@ -56,9 +60,37 @@ void ylclient::setEthernetCardParam(char* mac, char* ip) {
 
 }
 
-bool ylclient::Post(int value) {
+void ylclient::setEthernetCardParam(String mac, String ip) {
 
-	return 0;
+}
+
+void ylclient::setEthernetCardParam(int serialindex) {
+//此处应该能够判断板子类型，然后决定串口数量
+
+}
+
+void ylclient::setEthernetCardType(ETHERNETCARD cardType) {
+	this->_cardtype = cardType;
+	switch (cardType) {
+	case W5100:
+
+		break;
+	case ENC28J60:
+
+		break;
+
+	case SERIALOVERHTTP:
+		net = new SerialHTTP;
+//(SerialHTTP)net->setPort(1);
+
+		break;
+	}
+}
+
+bool ylclient::Post(int value) {
+	float v;
+	v = (double) value;
+	return this->Post(v);
 }
 
 bool ylclient::Post(char* value) {

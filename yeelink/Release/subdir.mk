@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../GenericEthernet.cpp \
+../SerialHTTP.cpp \
 ../yeelink.cpp \
 ../ylclient.cpp 
 
 OBJS += \
 ./GenericEthernet.o \
+./SerialHTTP.o \
 ./yeelink.o \
 ./ylclient.o 
 
 CPP_DEPS += \
 ./GenericEthernet.d \
+./SerialHTTP.d \
 ./yeelink.d \
 ./ylclient.d 
 
