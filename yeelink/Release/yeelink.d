@@ -11,7 +11,7 @@ yeelink.d yeelink.o: ../yeelink.cpp ../yeelink.h \
  /usr/share/arduino/hardware/arduino/variants/standard/pins_arduino.h \
  ../ylclient.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/WString.h ../ylconst.h \
- ../GenericEthernet.h
+ ../ylconf.h ../GenericEthernet.h
 
 ../yeelink.h:
 
@@ -40,5 +40,7 @@ yeelink.d yeelink.o: ../yeelink.cpp ../yeelink.h \
 /usr/share/arduino/hardware/arduino/cores/arduino/WString.h:
 
 ../ylconst.h:
+
+../ylconf.h:
 
 ../GenericEthernet.h:

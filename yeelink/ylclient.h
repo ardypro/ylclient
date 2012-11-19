@@ -14,13 +14,15 @@
 
 #include "WString.h"
 #include "ylconst.h"
+#include "ylconf.h"
+
 #include "GenericEthernet.h"
 
 
 namespace yeelink {
 
 class ylclient {
-private:
+protected:
 	char* _apikey;
 	ETHERNETCARD _cardtype;
 	bool _connected;

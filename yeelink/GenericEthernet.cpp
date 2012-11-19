@@ -10,19 +10,33 @@
 namespace yeelink {
 
 GenericEthernet::GenericEthernet() {
-	// TODO Auto-generated constructor stub
-
+	seconds=10; //API规定两条记录发送的时间间隔不少于10s
 }
 
 GenericEthernet::~GenericEthernet() {
-	// TODO Auto-generated destructor stub
+
 }
 
 
-//virtual bool  GenericEthernet::connect()
-//{
-//
-//}
+int GenericEthernet::getInterval()
+{
+	return seconds;
+}
+
+void GenericEthernet::setInterval(int Seconds)
+{
+	seconds=Seconds;
+}
+
+json* GenericEthernet::getAPIHeader()
+{
+
+}
+
+json* GenericEthernet::getJSONStr()
+{
+
+}
 
 } /* namespace yeelink */
 

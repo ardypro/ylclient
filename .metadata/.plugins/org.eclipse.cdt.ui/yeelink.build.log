@@ -1,15 +1,20 @@
-11:00:19 **** Incremental Build of configuration Release for project yeelink ****
+10:53:09 **** Incremental Build of configuration Release for project yeelink ****
 make all 
+Building file: ../GenericEthernet.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"GenericEthernet.d" -MT"GenericEthernet.d"  -c -o "GenericEthernet.o" -x c++ "../GenericEthernet.cpp"
+Finished building: ../GenericEthernet.cpp
+ 
 Building file: ../SerialHTTP.cpp
-../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(int)’:
-../SerialHTTP.cpp:36:1: warning: no return statement in function returning non-void
-../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(float)’:
 Invoking: AVR C++ Compiler
 avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"SerialHTTP.d" -MT"SerialHTTP.d"  -c -o "SerialHTTP.o" -x c++ "../SerialHTTP.cpp"
+../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(int)’:
 Finished building: ../SerialHTTP.cpp
-../SerialHTTP.cpp:40:1: warning: no return statement in function returning non-void
  
+../SerialHTTP.cpp:36:1: warning: no return statement in function returning non-void
 Building file: ../yeelink.cpp
+../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(float)’:
+../SerialHTTP.cpp:40:1: warning: no return statement in function returning non-void
 Invoking: AVR C++ Compiler
 avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"yeelink.d" -MT"yeelink.d"  -c -o "yeelink.o" -x c++ "../yeelink.cpp"
 Finished building: ../yeelink.cpp
@@ -52,5 +57,5 @@ Data:        297 bytes (14.5% Full)
 Finished building: sizedummy
  
 
-11:00:21 Build Finished (took 2s.310ms)
+10:53:10 Build Finished (took 1s.176ms)
 

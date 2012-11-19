@@ -8,7 +8,8 @@
  */
 
 #include "ylclient.h"
-#include "ylconst.h"
+
+
 //#ifdef SERIALPROXY
 #include "SerialHTTP.h"
 //#endif
@@ -81,7 +82,7 @@ void ylclient::setEthernetCardType(ETHERNETCARD cardType) {
 
 	case SERIALOVERHTTP:
 		net = new SerialHTTP;
-//(SerialHTTP)net->setPort(1);
+
 
 		break;
 	}

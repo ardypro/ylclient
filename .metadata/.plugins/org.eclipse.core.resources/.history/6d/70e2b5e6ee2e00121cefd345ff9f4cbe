@@ -1,0 +1,37 @@
+/*
+ * ylconf.h
+ *
+ *  Created on: 2012-11-15
+ *      Author: ardypro
+ *
+ *      类库的配置文件
+ *      可以选择是支持所有的三种方式还是其中的任意一种
+ *
+ */
+
+#ifndef YLCONF_H_
+#define YLCONF_H_
+
+
+/*
+ * 		选择与服务器连接方式，目前支持的方式有三种
+ * 			W5100网络模块
+ * 			ENC28J60网络模块
+ * 			通过PC上的Serial转HTTP方式
+ *
+ * 		根据不同的连接方式，来屏蔽下面的预编译指令
+ */
+
+#define W5100BOARD
+#define ENC28J60BOARD
+#define SERIALHTTP
+
+#if ARDUINO >= 100
+#include "Arduino.h"
+#else
+#include "WConstants.h"
+#include "WProgram.h"
+#endif
+
+
+#endif /* YLCONF_H_ */
