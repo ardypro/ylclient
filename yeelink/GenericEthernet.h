@@ -16,10 +16,11 @@ namespace yeelink {
 class GenericEthernet {
 private:
 	int seconds;
-
+	json* apiHeader;
+	json* jsonStr;
 protected:
-	json* getAPIHeader();
-	json* getJSONStr();
+	//json* getAPIHeader();
+	//json* getJSONStr();
 public:
 	GenericEthernet();
 	virtual ~GenericEthernet();
@@ -35,8 +36,8 @@ public:
 	void setInterval(int Seconds);
 	int getInterval();
 
-	int Available()=0;
-	char Read()=0;
+	//virtual int Available()=0;
+	//virtual char Read()=0;
 
 };
 

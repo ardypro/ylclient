@@ -41,4 +41,8 @@ const int SERIAL_BUSY = 13;
 //yeelink服务器地址
 #define APISERVER  "api.yeelink.net"
 
+//API版本号
+#define APIVERSION "v1.0"
+
+
 #endif /* YLCONST_H_ */
