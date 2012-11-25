@@ -95,7 +95,7 @@ void ylclient::setEthernetCardType(ETHERNETCARD cardType)
 		break;
 
 	case SERIALOVERHTTP:
-		net = new ylSerialHTTP();
+		net = new SerialHTTP();
 
 		break;
 	}

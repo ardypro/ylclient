@@ -10,7 +10,7 @@ ylclient.d ylclient.o: ../ylclient.cpp ../ylclient.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/Printable.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/new.h \
  /usr/share/arduino/hardware/arduino/variants/standard/pins_arduino.h \
- ../GenericEthernet.h ../SerialHTTP.h
+ ../ylGenericEthernet.h ../ylSerialHTTP.h
 
 ../ylclient.h:
 
@@ -40,6 +40,6 @@ ylclient.d ylclient.o: ../ylclient.cpp ../ylclient.h \
 
 /usr/share/arduino/hardware/arduino/variants/standard/pins_arduino.h:
 
-../GenericEthernet.h:
+../ylGenericEthernet.h:
 
-../SerialHTTP.h:
+../ylSerialHTTP.h:

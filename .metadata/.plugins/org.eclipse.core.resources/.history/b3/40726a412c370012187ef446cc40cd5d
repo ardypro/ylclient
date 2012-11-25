@@ -33,7 +33,7 @@ protected:
 	int _ipaddr[];
 	int _serialIndex;
 
-	ylGenericEthernet* net;			//定义一个虚拟网卡变量
+	GenericEthernet* net;			//定义一个虚拟网卡变量
 
 public:
 	ylclient();

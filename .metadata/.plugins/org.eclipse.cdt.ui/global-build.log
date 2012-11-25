@@ -1,4 +1,4 @@
-02:03:45 **** Incremental Build of configuration Release for project Arduino_Duemilanove_w__ATmega328 ****
+02:17:25 **** Incremental Build of configuration Release for project Arduino_Duemilanove_w__ATmega328 ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega328p libArduino_Duemilanove_w__ATmega328.a
@@ -202,16 +202,16 @@ Data:          0 bytes (0.0% Full)
 
 Finished building: sizedummy
  
-02:03:45 **** Incremental Build of configuration Release for project yeelink ****
+02:17:26 **** Incremental Build of configuration Release for project yeelink ****
 make all 
-Building file: ../ylSerialHTTP.cpp
+Building file: ../ylclient.cpp
 Invoking: AVR C++ Compiler
-avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylSerialHTTP.d" -MT"ylSerialHTTP.d"  -c -o "ylSerialHTTP.o" -x c++ "../ylSerialHTTP.cpp"
-Finished building: ../ylSerialHTTP.cpp
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylclient.d" -MT"ylclient.d"  -c -o "ylclient.o" -x c++ "../ylclient.cpp"
+Finished building: ../ylclient.cpp
  
 Building target: yeelink.elf
 Invoking: AVR C++ Linker
-avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./GenericEthernet.o ./SerialHTTP.o ./yeelink.o ./ylGenericEthernet.o ./ylSerialHTTP.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
+avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./yeelink.o ./ylGenericEthernet.o ./ylSerialHTTP.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
 Finished building target: yeelink.elf
  
 Invoking: AVR Create Extended Listing
@@ -232,10 +232,10 @@ AVR Memory Usage
 ----------------
 Device: atmega328p
 
-Program:    5740 bytes (17.5% Full)
+Program:    5652 bytes (17.2% Full)
 (.text + .data + .bootloader)
 
-Data:        337 bytes (16.5% Full)
+Data:        331 bytes (16.2% Full)
 (.data + .bss + .noinit)
 
 

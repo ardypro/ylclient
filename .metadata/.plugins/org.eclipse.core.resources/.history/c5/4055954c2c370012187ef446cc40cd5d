@@ -10,7 +10,7 @@
 #include "ylclient.h"
 
 //#ifdef SERIALPROXY
-#include "ylSerialHTTP.h"
+#include "SerialHTTP.h"
 //#endif
 
 namespace yeelink
@@ -95,7 +95,7 @@ void ylclient::setEthernetCardType(ETHERNETCARD cardType)
 		break;
 
 	case SERIALOVERHTTP:
-		net = new ylSerialHTTP();
+		net = new SerialHTTP();
 
 		break;
 	}
