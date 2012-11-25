@@ -1,0 +1,24 @@
+/*
+ * ylSerialHTTP.cpp
+ *
+ *  Created on: 2012-11-26
+ *      Author: ardypro
+ */
+
+#include "ylSerialHTTP.h"
+
+namespace yeelink
+{
+
+ylSerialHTTP::ylSerialHTTP()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+ylSerialHTTP::~ylSerialHTTP()
+{
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace yeelink */

@@ -1,32 +1,13 @@
-23:50:08 **** Build of configuration Release for project yeelink ****
+02:03:45 **** Incremental Build of configuration Release for project yeelink ****
 make all 
-Building file: ../GenericEthernet.cpp
+Building file: ../ylSerialHTTP.cpp
 Invoking: AVR C++ Compiler
-avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"GenericEthernet.d" -MT"GenericEthernet.d"  -c -o "GenericEthernet.o" -x c++ "../GenericEthernet.cpp"
-../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(int)’:
-Finished building: ../GenericEthernet.cpp
-../SerialHTTP.cpp:36:1: warning: no return statement in function returning non-void
- 
-../SerialHTTP.cpp: In member function ‘virtual bool yeelink::SerialHTTP::Post(float)’:
-Building file: ../SerialHTTP.cpp
-Invoking: AVR C++ Compiler
-../SerialHTTP.cpp:40:1: warning: no return statement in function returning non-void
-avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"SerialHTTP.d" -MT"SerialHTTP.d"  -c -o "SerialHTTP.o" -x c++ "../SerialHTTP.cpp"
-Finished building: ../SerialHTTP.cpp
- 
-Building file: ../yeelink.cpp
-Invoking: AVR C++ Compiler
-avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"yeelink.d" -MT"yeelink.d"  -c -o "yeelink.o" -x c++ "../yeelink.cpp"
-Finished building: ../yeelink.cpp
- 
-Building file: ../ylclient.cpp
-Invoking: AVR C++ Compiler
-avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylclient.d" -MT"ylclient.d"  -c -o "ylclient.o" -x c++ "../ylclient.cpp"
-Finished building: ../ylclient.cpp
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylSerialHTTP.d" -MT"ylSerialHTTP.d"  -c -o "ylSerialHTTP.o" -x c++ "../ylSerialHTTP.cpp"
+Finished building: ../ylSerialHTTP.cpp
  
 Building target: yeelink.elf
 Invoking: AVR C++ Linker
-avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./GenericEthernet.o ./SerialHTTP.o ./yeelink.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
+avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./GenericEthernet.o ./SerialHTTP.o ./yeelink.o ./ylGenericEthernet.o ./ylSerialHTTP.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
 Finished building target: yeelink.elf
  
 Invoking: AVR Create Extended Listing
@@ -47,15 +28,15 @@ AVR Memory Usage
 ----------------
 Device: atmega328p
 
-Program:    2784 bytes (8.5% Full)
+Program:    5740 bytes (17.5% Full)
 (.text + .data + .bootloader)
 
-Data:        297 bytes (14.5% Full)
+Data:        337 bytes (16.5% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-23:50:09 Build Finished (took 371ms)
+02:03:46 Build Finished (took 372ms)
 

@@ -16,13 +16,15 @@ void setup()
 	//初始化yeelink client
 	//client.setAPIKey("apikey");	//设置API key，这里采用默认的key
 	//client.setAPIVersion("v1.0");	//设置API版本，除非yeelink API升级，则采用默认的v1.0版本
-
-	if(! client.connect())
-		Serial.println("could not access remote server!");
+	client.setEthernetCardType(SERIALOVERHTTP );
+	randomSeed(analogRead(0));
 }
 
 // The loop function is called in an endless loop
 void loop()
 {
-	client.Post(23);
+	int v;
+	v=random(256);
+	client.Post(v);
+	delay(20*1000);
 }

@@ -14,6 +14,8 @@
 typedef uint8_t byte;
 typedef char json;
 
+
+
 //网络模块类型，最后一种是串口转HTTP代理工具
 enum ETHERNETCARD {
 	W5100, 				//W5100网络模块
@@ -36,7 +38,7 @@ const int SERVER_BUSY = 3;
 
 const int INVALID_DEVICEID = 11;
 const int INVALID_SENSORID = 12;
-const int SERIAL_BUSY = 13;
+const int SERIALPORT_BUSY = 13;
 
 //yeelink服务器地址
 #define APISERVER  "api.yeelink.net"
