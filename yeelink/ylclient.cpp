@@ -110,7 +110,6 @@ bool ylclient::Post(int value)
 
 bool ylclient::Post(char* value)
 {
-
 	return 0;
 }
 

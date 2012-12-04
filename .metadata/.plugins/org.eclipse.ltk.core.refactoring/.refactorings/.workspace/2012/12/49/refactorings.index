@@ -1,0 +1,6 @@
+1354609740206	Delete resource 'yeelink/Ethernet'
+1354609775652	Delete resource 'yeelink/SPI'
+1354624262676	Delete resource 'yeelink/GenericEthernet.cpp'
+1354624268195	Delete resource 'yeelink/GenericEthernet.h'
+1354624273502	Delete resource 'yeelink/SerialHTTP.cpp'
+1354624278347	Delete resource 'yeelink/SerialHTTP.h'

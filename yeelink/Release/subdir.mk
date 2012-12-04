@@ -7,18 +7,21 @@ CPP_SRCS += \
 ../yeelink.cpp \
 ../ylGenericEthernet.cpp \
 ../ylSerialHTTP.cpp \
+../ylW5100Ethernet.cpp \
 ../ylclient.cpp 
 
 OBJS += \
 ./yeelink.o \
 ./ylGenericEthernet.o \
 ./ylSerialHTTP.o \
+./ylW5100Ethernet.o \
 ./ylclient.o 
 
 CPP_DEPS += \
 ./yeelink.d \
 ./ylGenericEthernet.d \
 ./ylSerialHTTP.d \
+./ylW5100Ethernet.d \
 ./ylclient.d 
 
 

@@ -27,7 +27,6 @@ public:
 	ylGenericEthernet();
 	virtual ~ylGenericEthernet();
 
-	virtual bool connect()=0;
 	virtual bool Post(int value)=0;
 	virtual bool Post(float value)=0;
 	//virtual bool Post(char* value)=0;

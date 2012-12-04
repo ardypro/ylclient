@@ -1,20 +1,64 @@
-10:10:28 **** Build of configuration Release for project yeelink ****
+20:35:58 **** Incremental Build of configuration Release for project yeelink ****
 make all 
+Building file: ../yeelink.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"yeelink.d" -MT"yeelink.d"  -c -o "yeelink.o" -x c++ "../yeelink.cpp"
+Finished building: ../yeelink.cpp
+ 
+Building file: ../ylGenericEthernet.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylGenericEthernet.d" -MT"ylGenericEthernet.d"  -c -o "ylGenericEthernet.o" -x c++ "../ylGenericEthernet.cpp"
+Finished building: ../ylGenericEthernet.cpp
+ 
+Building file: ../ylSerialHTTP.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylSerialHTTP.d" -MT"ylSerialHTTP.d"  -c -o "ylSerialHTTP.o" -x c++ "../ylSerialHTTP.cpp"
+../ylW5100Ethernet.cpp: In member function ‘bool yeelink::ylW5100Ethernet::connect()’:
+Finished building: ../ylSerialHTTP.cpp
+../ylW5100Ethernet.cpp:47:1: warning: no return statement in function returning non-void
+ 
+Building file: ../ylW5100Ethernet.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylW5100Ethernet.d" -MT"ylW5100Ethernet.d"  -c -o "ylW5100Ethernet.o" -x c++ "../ylW5100Ethernet.cpp"
+Finished building: ../ylW5100Ethernet.cpp
+ 
+Building file: ../ylclient.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylclient.d" -MT"ylclient.d"  -c -o "ylclient.o" -x c++ "../ylclient.cpp"
+Finished building: ../ylclient.cpp
+ 
+Building target: yeelink.elf
+Invoking: AVR C++ Linker
+avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./yeelink.o ./ylGenericEthernet.o ./ylSerialHTTP.o ./ylW5100Ethernet.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
+Finished building target: yeelink.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S yeelink.elf  >"yeelink.lss"
+Finished building: yeelink.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex yeelink.elf  "yeelink.hex"
+Finished building: yeelink.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex yeelink.elf  "yeelink.eep"
+Finished building: yeelink.eep
+ 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega328p yeelink.elf
 AVR Memory Usage
 ----------------
 Device: atmega328p
 
-Program:    5652 bytes (17.2% Full)
+Program:    5524 bytes (16.9% Full)
 (.text + .data + .bootloader)
 
-Data:        331 bytes (16.2% Full)
+Data:        301 bytes (14.7% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-10:10:29 Build Finished (took 221ms)
+20:35:58 Build Finished (took 525ms)
 
