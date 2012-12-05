@@ -32,4 +32,11 @@
 		<nature>it.baeyens.arduinonature</nature>
 		<nature>org.eclipse.mylyn.wikitext.ui.wikiTextNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>SPI</name>
+			<type>2</type>
+			<locationURI>PivateLibPath/SPI</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

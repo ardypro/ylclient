@@ -9,7 +9,7 @@
 #define YLW5100ETHERNET_H_
 
 #include "ylGenericEthernet.h"
-
+#include "SPI.h"
 
 namespace yeelink
 {
