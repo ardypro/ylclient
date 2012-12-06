@@ -24,8 +24,8 @@ void setup()
 // The loop function is called in an endless loop
 void loop()
 {
-	long v;
+	int v;
 	v=random(256);
-	//client.Post(v);
+	client.Post(v);
 	delay(20*1000);
 }

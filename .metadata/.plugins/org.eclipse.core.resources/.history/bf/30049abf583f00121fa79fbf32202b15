@@ -26,6 +26,6 @@ void loop()
 {
 	long v;
 	v=random(256);
-	//client.Post(v);
+	client.Post(v);
 	delay(20*1000);
 }

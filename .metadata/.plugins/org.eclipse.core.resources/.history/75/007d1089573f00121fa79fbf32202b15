@@ -27,7 +27,7 @@ public:
 	ylGenericEthernet();
 	virtual ~ylGenericEthernet();
 
-	virtual bool Post(long value)=0;
+	virtual bool Post(int value)=0;
 	virtual bool Post(float value)=0;
 	//virtual bool Post(char* value)=0;
 	//virtual bool Post(String value)=0;
@@ -37,7 +37,6 @@ public:
 	void setInterval(int Seconds);
 	int getInterval();
 
-//TODO 后续版本支持的功能
 	//virtual int Available()=0;
 	//virtual char Read()=0;
 };

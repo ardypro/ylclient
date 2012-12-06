@@ -70,7 +70,7 @@ bool ylSerialHTTP::connect()
 	return true;
 }
 
-bool ylSerialHTTP::Post(long value)
+bool ylSerialHTTP::Post(int value)
 {
 	//sendValueflag();
 	return serial->print(value);

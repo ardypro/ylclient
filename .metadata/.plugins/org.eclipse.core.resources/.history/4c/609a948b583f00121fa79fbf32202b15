@@ -34,32 +34,32 @@ ylclient::~ylclient()
 	// TODO Auto-generated destructor stub
 }
 
-//bool ylclient::connect(char * APIKey)
-//{
-//	this->_apikey = APIKey;
-//	return 0;
-//}
-//
-//bool ylclient::connect()
-//{
-//	if (this->_apikey == 0)
-//	{
-//		return 0;
-//	}
-//	else
-//	{
-//
-//		return 0;
-//	}
-//}
-//
-//bool ylclient::connected()
-//{
-////注意，目前这里没有实时获取连接状态，因此有可能在服务器端断开连接直接之后，
-////本地端的状态变量依然是连接
-//
-//	return _connected;
-//}
+bool ylclient::connect(char * APIKey)
+{
+	this->_apikey = APIKey;
+	return 0;
+}
+
+bool ylclient::connect()
+{
+	if (this->_apikey == 0)
+	{
+		return 0;
+	}
+	else
+	{
+
+		return 0;
+	}
+}
+
+bool ylclient::connected()
+{
+//注意，目前这里没有实时获取连接状态，因此有可能在服务器端断开连接直接之后，
+//本地端的状态变量依然是连接
+
+	return _connected;
+}
 
 void ylclient::setAPIKey(char* APIKey)
 {
@@ -101,7 +101,7 @@ void ylclient::setEthernetCardType(ETHERNETCARD cardType)
 	}
 }
 
-bool ylclient::Post(long value)
+bool ylclient::Post(int value)
 {
 	float v;
 	v = (double) value;

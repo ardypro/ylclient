@@ -101,7 +101,7 @@ void ylclient::setEthernetCardType(ETHERNETCARD cardType)
 	}
 }
 
-bool ylclient::Post(long value)
+bool ylclient::Post(int value)
 {
 	float v;
 	v = (double) value;
