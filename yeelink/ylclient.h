@@ -30,14 +30,14 @@ private:
 	char* _apiver;
 	int _activedeviceid;
 	int _activesensorid;
-	int _macaddr[];
-	int _ipaddr[];
-	int _serialIndex;
+	byte _macaddr[];
+	byte _ipaddr[];
+	byte _serialIndex;
 
 	ylGenericEthernet* net;			//定义一个虚拟网卡变量
 
 public:
-	ylclient();
+	ylclient(ETHERNETCARD cardType=SERIALOVERHTTP);
 	virtual ~ylclient();
 
 	/*
@@ -47,13 +47,11 @@ public:
 	 void disconnect();				//断开与服务器的连接
 	 bool connected();				//连接状态
 	 */
-	void setAPIKey(char* APIKey);	//设置APIKEY
-	void setAPIKey(String APIKey);
+	void setAPIKey(String APIKey);	//设置APIKEY
 
 	//设置网卡参数
-	void setEthernetCardParam(char* mac, char* ip);
-	void setEthernetCardParam(String mac, String ip);
-	void setEthernetCardParam(int serialindex);			//仅对使用串口代理方式有效
+	void setEthernetCardParam(byte mac[], byte ip[]);
+	void setEthernetCardParam(byte serialindex);			//仅对使用串口代理方式有效
 
 	//设置网卡类型
 	void setEthernetCardType(ETHERNETCARD cardType);
@@ -68,6 +66,10 @@ public:
 	bool Post(bool value);
 	bool Post(char* value);
 
+	//TODO 后续版本支持的功能
+	//virtual int Available();
+	//virtual char Read();
 };
+
 } /* namespace yeelink */
 #endif /* YLCLIENT_H_ */

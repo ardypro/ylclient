@@ -1,18 +1,111 @@
-11:56:24 **** Incremental Build of configuration Release for project yeelink ****
+00:00:18 **** Build of configuration Release for project yeelink ****
 make all 
+Building file: /usr/share/arduino/libraries/SPI/SPI.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"SPI/SPI.d" -MT"SPI/SPI.d"  -c -o "SPI/SPI.o" -x c++ "/usr/share/arduino/libraries/SPI/SPI.cpp"
+Finished building: /usr/share/arduino/libraries/SPI/SPI.cpp
+ 
+Building file: /usr/share/arduino/libraries/Ethernet/utility/socket.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/utility/socket.d" -MT"Ethernet/utility/socket.d"  -c -o "Ethernet/utility/socket.o" -x c++ "/usr/share/arduino/libraries/Ethernet/utility/socket.cpp"
+Finished building: /usr/share/arduino/libraries/Ethernet/utility/socket.cpp
+ 
+Building file: /usr/share/arduino/libraries/Ethernet/utility/w5100.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/utility/w5100.d" -MT"Ethernet/utility/w5100.d"  -c -o "Ethernet/utility/w5100.o" -x c++ "/usr/share/arduino/libraries/Ethernet/utility/w5100.cpp"
+In file included from /usr/share/arduino/hardware/arduino/cores/arduino/Udp.h:39:0,
+                 from /usr/share/arduino/libraries/Ethernet/EthernetUdp.h:40,
+Finished building: /usr/share/arduino/libraries/Ethernet/utility/w5100.cpp
+ 
+                 from /usr/share/arduino/libraries/Ethernet/Dhcp.h:7,
+Building file: /usr/share/arduino/libraries/Ethernet/Dhcp.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/Dhcp.d" -MT"Ethernet/Dhcp.d"  -c -o "Ethernet/Dhcp.o" -x c++ "/usr/share/arduino/libraries/Ethernet/Dhcp.cpp"
+                 from /usr/share/arduino/libraries/Ethernet/Dhcp.cpp:8:
+Finished building: /usr/share/arduino/libraries/Ethernet/Dhcp.cpp
+ 
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘IPAddress::operator uint32_t()’:
+Building file: /usr/share/arduino/libraries/Ethernet/Dns.cpp
+Invoking: AVR C++ Compiler
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/Dns.d" -MT"Ethernet/Dns.d"  -c -o "Ethernet/Dns.o" -x c++ "/usr/share/arduino/libraries/Ethernet/Dns.cpp"
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘bool IPAddress::operator==(const IPAddress&)’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules
+Finished building: /usr/share/arduino/libraries/Ethernet/Dns.cpp
+ 
+Building file: /usr/share/arduino/libraries/Ethernet/Ethernet.cpp
+Invoking: AVR C++ Compiler
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/libraries/Ethernet/Dhcp.cpp: In member function ‘uint8_t DhcpClass::parseDHCPResponse(long unsigned int, uint32_t&)’:
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/Ethernet.d" -MT"Ethernet/Ethernet.d"  -c -o "Ethernet/Ethernet.o" -x c++ "/usr/share/arduino/libraries/Ethernet/Ethernet.cpp"
+/usr/share/arduino/libraries/Ethernet/Dhcp.cpp:291:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
+Finished building: /usr/share/arduino/libraries/Ethernet/Ethernet.cpp
+ 
+Building file: /usr/share/arduino/libraries/Ethernet/EthernetClient.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/EthernetClient.d" -MT"Ethernet/EthernetClient.d"  -c -o "Ethernet/EthernetClient.o" -x c++ "/usr/share/arduino/libraries/Ethernet/EthernetClient.cpp"
+In file included from /usr/share/arduino/hardware/arduino/cores/arduino/Udp.h:39:0,
+Finished building: /usr/share/arduino/libraries/Ethernet/EthernetClient.cpp
+ 
+Building file: /usr/share/arduino/libraries/Ethernet/EthernetServer.cpp
+Invoking: AVR C++ Compiler
+                 from /usr/share/arduino/libraries/Ethernet/EthernetUdp.h:40,
+                 from /usr/share/arduino/libraries/Ethernet/Dns.cpp:6:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘IPAddress::operator uint32_t()’:
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/EthernetServer.d" -MT"Ethernet/EthernetServer.d"  -c -o "Ethernet/EthernetServer.o" -x c++ "/usr/share/arduino/libraries/Ethernet/EthernetServer.cpp"
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘bool IPAddress::operator==(const IPAddress&)’:
+Finished building: /usr/share/arduino/libraries/Ethernet/EthernetServer.cpp
+ 
+Building file: /usr/share/arduino/libraries/Ethernet/EthernetUdp.cpp
+Invoking: AVR C++ Compiler
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"Ethernet/EthernetUdp.d" -MT"Ethernet/EthernetUdp.d"  -c -o "Ethernet/EthernetUdp.o" -x c++ "/usr/share/arduino/libraries/Ethernet/EthernetUdp.cpp"
+Finished building: /usr/share/arduino/libraries/Ethernet/EthernetUdp.cpp
+ 
 Building file: ../yeelink.cpp
 Invoking: AVR C++ Compiler
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules
 avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"yeelink.d" -MT"yeelink.d"  -c -o "yeelink.o" -x c++ "../yeelink.cpp"
+/usr/share/arduino/libraries/Ethernet/Dns.cpp: In member function ‘uint16_t DNSClient::ProcessResponse(uint16_t, IPAddress&)’:
+/usr/share/arduino/libraries/Ethernet/Dns.cpp:285:29: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/libraries/Ethernet/Dns.cpp:285:29: warning: dereferencing type-punned pointer will break strict-aliasing rules
 Finished building: ../yeelink.cpp
+ 
+Building file: ../ylGenericEthernet.cpp
+Invoking: AVR C++ Compiler
+/usr/share/arduino/libraries/Ethernet/Dns.cpp:287:50: warning: dereferencing type-punned pointer will break strict-aliasing rules
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylGenericEthernet.d" -MT"ylGenericEthernet.d"  -c -o "ylGenericEthernet.o" -x c++ "../ylGenericEthernet.cpp"
+/usr/share/arduino/libraries/Ethernet/Dns.cpp:304:28: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/libraries/Ethernet/Dns.cpp:304:28: warning: dereferencing type-punned pointer will break strict-aliasing rules
+Finished building: ../ylGenericEthernet.cpp
+ 
+Building file: ../ylSerialHTTP.cpp
+Invoking: AVR C++ Compiler
+/usr/share/arduino/libraries/Ethernet/Dns.cpp:313:29: warning: dereferencing type-punned pointer will break strict-aliasing rules
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylSerialHTTP.d" -MT"ylSerialHTTP.d"  -c -o "ylSerialHTTP.o" -x c++ "../ylSerialHTTP.cpp"
+Finished building: ../ylSerialHTTP.cpp
+ 
+Building file: ../ylW5100Ethernet.cpp
+Invoking: AVR C++ Compiler
+/usr/share/arduino/libraries/Ethernet/Dns.cpp:313:29: warning: dereferencing type-punned pointer will break strict-aliasing rules
+avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylW5100Ethernet.d" -MT"ylW5100Ethernet.d"  -c -o "ylW5100Ethernet.o" -x c++ "../ylW5100Ethernet.cpp"
+Finished building: ../ylW5100Ethernet.cpp
  
 Building file: ../ylclient.cpp
 Invoking: AVR C++ Compiler
+In file included from /usr/share/arduino/libraries/Ethernet/Ethernet.h:6:0,
+                 from /usr/share/arduino/libraries/Ethernet/Ethernet.cpp:2:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘IPAddress::operator uint32_t()’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
 avr-g++ -I"/usr/share/arduino/hardware/arduino/cores/arduino" -I"/usr/share/arduino/hardware/arduino/variants/standard" -I"/home/ardypro/文档/projects/ylclient/yeelink" -I"/usr/share/arduino/libraries/SPI" -I"/usr/share/arduino/libraries/Ethernet" -I"/usr/share/arduino/libraries/Ethernet/utility" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=100 -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ylclient.d" -MT"ylclient.d"  -c -o "ylclient.o" -x c++ "../ylclient.cpp"
 Finished building: ../ylclient.cpp
  
 Building target: yeelink.elf
 Invoking: AVR C++ Linker
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘bool IPAddress::operator==(const IPAddress&)’:
 avr-gcc -Os -Wl,--gc-sections  -L"/home/ardypro/文档/projects/ylclient/Arduino_Duemilanove_w__ATmega328/Release" -mmcu=atmega328p  -o"yeelink.elf"  ./SPI/SPI.o  ./Ethernet/utility/socket.o ./Ethernet/utility/w5100.o  ./Ethernet/Dhcp.o ./Ethernet/Dns.o ./Ethernet/Ethernet.o ./Ethernet/EthernetClient.o ./Ethernet/EthernetServer.o ./Ethernet/EthernetUdp.o  ./yeelink.o ./ylGenericEthernet.o ./ylSerialHTTP.o ./ylW5100Ethernet.o ./ylclient.o   -l"Arduino_Duemilanove_w__ATmega328" -lm
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules
 Finished building target: yeelink.elf
  
 Invoking: AVR Create Extended Listing
@@ -33,15 +126,39 @@ AVR Memory Usage
 ----------------
 Device: atmega328p
 
-Program:    5814 bytes (17.7% Full)
+Program:    6016 bytes (18.4% Full)
 (.text + .data + .bootloader)
 
-Data:        355 bytes (17.3% Full)
+Data:        362 bytes (17.7% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules
+In file included from /usr/share/arduino/libraries/Ethernet/Ethernet.h:6:0,
+                 from /usr/share/arduino/libraries/Ethernet/EthernetClient.cpp:10:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘IPAddress::operator uint32_t()’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘bool IPAddress::operator==(const IPAddress&)’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules
+In file included from /usr/share/arduino/libraries/Ethernet/Ethernet.h:6:0,
+                 from /usr/share/arduino/libraries/Ethernet/EthernetServer.cpp:7:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘IPAddress::operator uint32_t()’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘bool IPAddress::operator==(const IPAddress&)’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules
+In file included from /usr/share/arduino/libraries/Ethernet/Ethernet.h:6:0,
+                 from /usr/share/arduino/libraries/Ethernet/EthernetUdp.cpp:31:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘IPAddress::operator uint32_t()’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function ‘bool IPAddress::operator==(const IPAddress&)’:
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules
+../ylW5100Ethernet.cpp: In member function ‘bool yeelink::ylW5100Ethernet::connect()’:
+../ylW5100Ethernet.cpp:47:1: warning: no return statement in function returning non-void
 
-11:56:25 Build Finished (took 525ms)
+00:00:21 Build Finished (took 2s.476ms)
 

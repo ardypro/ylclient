@@ -18,6 +18,10 @@ class ylGenericEthernet
 {
 private:
 	int seconds;
+	byte MAC[];
+	byte IP[];
+	byte subMask[];
+
 	json* apiHeader;
 	json* jsonStr;
 protected:
@@ -32,11 +36,16 @@ public:
 	//virtual bool Post(char* value)=0;
 	//virtual bool Post(String value)=0;
 	//virtual bool Post(int value)=0;
-	virtual bool postKeyValue(char* key, char* value)=0;
+	//virtual bool postKeyValue(char* key, char* value)=0;
 
 	void setInterval(int Seconds);
 	int getInterval();
 
+	//设置网卡类型
+	void setSerialIndex(int index);
+	void setMac(byte mac[]);
+	void setIP(byte ip[]);
+	void setSubMask(byte mask[]);
 //TODO 后续版本支持的功能
 	//virtual int Available()=0;
 	//virtual char Read()=0;

@@ -46,5 +46,7 @@ const int SERIALPORT_BUSY = 13;
 //API版本号
 #define APIVERSION "v1.0"
 
+#define MACLENGTH 6 //Mac address length
+#define IPLENGTH 4
 
 #endif /* YLCONST_H_ */

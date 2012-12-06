@@ -14,7 +14,8 @@ namespace yeelink
 {
 
 class ylSerialHTTP: public yeelink::ylGenericEthernet
-{private:
+{
+private:
 	int serialindex;
 	HardwareSerial* serial;
 public:
@@ -22,11 +23,11 @@ public:
 	virtual ~ylSerialHTTP();
 
 	bool connect();
-		bool Post(long value);
-		bool Post(float value);
-		//bool Post(char* value);
+	bool Post(long value);
+	bool Post(float value);
+	//bool Post(char* value);
 
-		bool postKeyValue(char* key, char* value);
+	bool postKeyValue(char* key, char* value);
 };
 
 } /* namespace yeelink */

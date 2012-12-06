@@ -13,25 +13,31 @@
 #include "ylSerialHTTP.h"
 //#endif
 
+#include "ylW5100Ethernet.h"
+
 namespace yeelink
 {
 
-ylclient::ylclient()
+ylclient::ylclient(ETHERNETCARD cardType)
 {
-	// TODO Auto-generated constructor stub
+	// 必须先设置cardtype，这样才能确定net是哪个子类的实例
+	this->_cardtype = cardType;
+	this->setEthernetCardType(cardType);
+
 	this->_connected = false;
 	this->_apikey = (char*) "89501b438791e28f74c21035a88fffd2";	//TODO 发布时要取消
-	this->_cardtype = SERIALOVERHTTP;
-	this->_apiver = (char*) "v1.0";
+
+	this->_apiver = (char*) APIVERSION;
 	this->_activedeviceid = 0;
 	this->_activesensorid = 0;
-	this->_serialIndex = 1;
+	this->_serialIndex = 0;
 
 }
 
 ylclient::~ylclient()
 {
-	// TODO Auto-generated destructor stub
+	delete net;
+	net = NULL;
 }
 
 //bool ylclient::connect(char * APIKey)
@@ -61,25 +67,28 @@ ylclient::~ylclient()
 //	return _connected;
 //}
 
-void ylclient::setAPIKey(char* APIKey)
+void ylclient::setAPIKey(String APIKey)
 {
-
+	this->_apikey = &APIKey[0];
 }
 
-void ylclient::setEthernetCardParam(char* mac, char* ip)
+void ylclient::setEthernetCardParam(byte mac[], byte ip[])
 {
+	for (int i = 0; i < MACLENGTH; i++)
+		this->_macaddr[i] = mac[i];
 
+	for (int i = 0; i < IPLENGTH; i++)
+		this->_ipaddr[i] = ip[i];
 }
 
-void ylclient::setEthernetCardParam(String mac, String ip)
+void ylclient::setEthernetCardParam(byte serialindex)
 {
-
-}
-
-void ylclient::setEthernetCardParam(int serialindex)
-{
-//此处应该能够判断板子类型，然后决定串口数量
-
+	this->_serialIndex = serialindex;
+	if ((serialindex < HARDSERIALCOUNTS - 1)
+			|| (serialindex > HARDSERIALCOUNTS - 1))
+		this->_serialIndex = 0; //Serial
+//TODO 传递给net
+	net->setSerialIndex(this->_serialIndex);
 }
 
 void ylclient::setEthernetCardType(ETHERNETCARD cardType)
@@ -88,7 +97,7 @@ void ylclient::setEthernetCardType(ETHERNETCARD cardType)
 	switch (cardType)
 	{
 	case W5100:
-
+		net = new ylW5100Ethernet();
 		break;
 	case ENC28J60:
 
