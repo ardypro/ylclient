@@ -33,4 +33,6 @@ SIZEDUMMY :=
 SUBDIRS := \
 . \
 SPI \
+Ethernet/utility \
+Ethernet \
 
