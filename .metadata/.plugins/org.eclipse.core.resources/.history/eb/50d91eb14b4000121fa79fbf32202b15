@@ -30,6 +30,10 @@ private:
 	char* _apiver;
 	int _activedeviceid;
 	int _activesensorid;
+	byte* _macaddr;
+	byte* _ipaddr;
+	byte* _mask;
+	byte _serialIndex;
 
 	ylGenericEthernet* net;			//定义一个虚拟网卡变量
 

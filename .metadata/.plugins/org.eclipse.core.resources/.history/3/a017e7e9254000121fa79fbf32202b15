@@ -41,8 +41,7 @@ void ylGenericEthernet::setSerialIndex(int index)
 
 void ylGenericEthernet::setMac(byte mac[])
 {
-byte * m;
-m=mac;
+MAC=mac;
 }
 
 void ylGenericEthernet::setSubMask(byte mask[])

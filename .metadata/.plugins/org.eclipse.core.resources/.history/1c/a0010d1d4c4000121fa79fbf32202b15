@@ -22,9 +22,6 @@ private:
 	byte* IP;
 	byte* subMask;
 
-	int activeSensorID;
-	int activeDeviceID;
-
 	json* apiHeader;
 	json* jsonStr;
 protected:
@@ -49,12 +46,6 @@ public:
 	void setMac(byte mac[]);
 	void setIP(byte ip[]);
 	void setSubMask(byte mask[]);
-
-	void setActiveSensor(int sensorid);
-	int getActiveSensor();
-	void setActiveDevice(int deviceid);
-	int getActiveDevice();
-
 //TODO 后续版本支持的功能
 	//virtual int Available()=0;
 	//virtual char Read()=0;
