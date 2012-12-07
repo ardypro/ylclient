@@ -34,25 +34,24 @@ void ylGenericEthernet::setInterval(int Seconds)
 	seconds = Seconds;
 }
 
-void ylGenericEthernet::setSerialIndex(int index)
+void  ylGenericEthernet::setSerialIndex(int index)
 {
-
+	//do nothing in base class
 }
 
-void ylGenericEthernet::setMac(byte mac[])
+void  ylGenericEthernet::setMac(byte mac[])
 {
-byte * m;
-m=mac;
+	//do nothing in base class
 }
 
-void ylGenericEthernet::setSubMask(byte mask[])
+void  ylGenericEthernet::setSubMask(byte mask[])
 {
-
+	//do nothing in base class
 }
 
-void ylGenericEthernet::setIP(byte ip[])
+void  ylGenericEthernet::setIP(byte ip[])
 {
-
+	//do nothing in base class
 }
 
 } /* namespace yeelink */

@@ -16,11 +16,12 @@ namespace yeelink
 class ylSerialHTTP: public yeelink::ylGenericEthernet
 {
 private:
-	int serialindex;
 	HardwareSerial* serial;
 public:
-	ylSerialHTTP(int serialIndex = 0); //pass the serial index, currently it does not support software serial
+	ylSerialHTTP();
 	virtual ~ylSerialHTTP();
+
+	void setSerialIndex(byte serialIndex);
 
 	bool connect();
 	bool Post(long value);

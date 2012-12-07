@@ -46,5 +46,19 @@ bool ylW5100Ethernet::connect()
 
 }
 
+void ylW5100Ethernet::setMac(byte mac[])
+{
+
+}
+
+void ylW5100Ethernet::setSubMask(byte mask[])
+{
+
+}
+
+void ylW5100Ethernet::setIP(byte ip[])
+{
+
+}
 
 } /* namespace yeelink */

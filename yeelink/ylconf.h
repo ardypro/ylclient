@@ -21,10 +21,9 @@
  *
  * 		根据不同的连接方式，来屏蔽下面的预编译指令
  */
-
+//#define ENC28J60BOARD
 #define W5100BOARD
-#define ENC28J60BOARD
-#define SERIALHTTPAPP
+//#define SERIALHTTPAPP
 
 //根据不同版本的IDE来包含对应的Arduino主文件
 #if ARDUINO >= 100

@@ -25,37 +25,9 @@ extern HardwareSerial Serial3;
 namespace yeelink
 {
 
-ylSerialHTTP::ylSerialHTTP(int serialIndex)
+ylSerialHTTP::ylSerialHTTP()
 {
-	switch (serialIndex)
-	{
-	case 0:
-		serial = &Serial;
-		break;
-	case 1:
-#if defined(UBRR1H)
-		serial = &Serial1;
-#else
-		serial = &Serial;
-#endif
-		break;
-	case 2:
-#if defined(UBRR2H)
-		serial = &Serial2;
-#else
-		serial = &Serial;
-#endif
-		break;
-	case 3:
-#if defined(UBRR3H)
-		serial = &Serial3;
-#else
-		serial = &Serial;
-#endif
-		break;
-	default:
-		serial = &Serial;
-	}
+
 
 }
 
@@ -88,4 +60,36 @@ bool ylSerialHTTP::postKeyValue(char* key, char* value)
 	return 0;
 }
 
+void ylSerialHTTP::setSerialIndex(byte serialIndex)
+{
+	switch (serialIndex)
+	{
+	case 0:
+		serial = &Serial;
+		break;
+	case 1:
+#if defined(UBRR1H)
+		serial = &Serial1;
+#else
+		serial = &Serial;
+#endif
+		break;
+	case 2:
+#if defined(UBRR2H)
+		serial = &Serial2;
+#else
+		serial = &Serial;
+#endif
+		break;
+	case 3:
+#if defined(UBRR3H)
+		serial = &Serial3;
+#else
+		serial = &Serial;
+#endif
+		break;
+	default:
+		serial = &Serial;
+	}
+}
 } /* namespace yeelink */

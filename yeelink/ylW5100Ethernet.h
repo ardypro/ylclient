@@ -20,7 +20,9 @@ public:
 	ylW5100Ethernet();
 	virtual ~ylW5100Ethernet();
 
-
+void setMac(byte mac[]);
+void setSubMask(byte mask[]);
+void setIP(byte ip[]);
 	bool Post(long value);
 	bool Post(float value);
 	//bool Post(char* value);
@@ -30,7 +32,9 @@ public:
 protected:
 private:
 	bool connect();
-
+	byte* MAC;
+	byte* IP;
+	byte* subMask;
 };
 
 } /* namespace yeelink */

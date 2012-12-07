@@ -18,9 +18,6 @@ class ylGenericEthernet
 {
 private:
 	int seconds;
-	byte* MAC;
-	byte* IP;
-	byte* subMask;
 
 	int activeSensorID;
 	int activeDeviceID;
@@ -45,10 +42,10 @@ public:
 	int getInterval();
 
 	//设置网卡类型
-	void setSerialIndex(int index);
-	void setMac(byte mac[]);
-	void setIP(byte ip[]);
-	void setSubMask(byte mask[]);
+	void virtual setSerialIndex(int index);
+	void virtual setMac(byte mac[]);
+	void virtual setIP(byte ip[]);
+	void virtual setSubMask(byte mask[]);
 
 	void setActiveSensor(int sensorid);
 	int getActiveSensor();

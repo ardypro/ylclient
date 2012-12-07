@@ -34,7 +34,7 @@ private:
 	ylGenericEthernet* net;			//定义一个虚拟网卡变量
 
 public:
-	ylclient(ETHERNETCARD cardType=SERIALOVERHTTP);
+	ylclient();
 	virtual ~ylclient();
 
 	/*
@@ -68,8 +68,7 @@ public:
 	//virtual char Read();
 
 private:
-	//设置网卡类型
-	void setEthernetCardType(ETHERNETCARD cardType);
+
 };
 
 } /* namespace yeelink */
