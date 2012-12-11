@@ -35,9 +35,9 @@ ylclient::ylclient()
 #endif
 #endif
 
-	this->_apikey = (char*) "89501b438791e28f74c21035a88fffd2";	//TODO 发布时要取消
+	this->_apikey = (char*) DEFAULTAPIKEY;
 
-	this->_apiver = (char*) APIVERSION;
+
 }
 
 ylclient::~ylclient()
@@ -48,9 +48,25 @@ ylclient::~ylclient()
 
 void ylclient::setAPIKey(String APIKey)
 {
-	this->_apikey = &APIKey[0];
+	net->setAPIKey(&APIKey[0]);
 }
 
+void ylclient::setAPIKey(char* APIKey)
+{
+	net->setAPIKey(APIKey);
+}
+
+bool ylclient::setActiveDevice(int deviceid)
+{
+	net->setActiveDevice(deviceid);
+	return true;
+}
+
+bool ylclient::setActiveSensor(int sensorid)
+{
+	net->setActiveSensor(sensorid);
+	return true;
+}
 
 bool ylclient::Post(long value)
 {

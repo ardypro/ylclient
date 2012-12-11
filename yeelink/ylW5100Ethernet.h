@@ -10,6 +10,9 @@
 
 #include "ylGenericEthernet.h"
 #include "SPI.h"
+#include "Ethernet.h"
+#include "ylconf.h"
+#include "ylconst.h"
 
 namespace yeelink
 {
@@ -20,9 +23,9 @@ public:
 	ylW5100Ethernet();
 	virtual ~ylW5100Ethernet();
 
-void setMac(byte mac[]);
-void setSubMask(byte mask[]);
-void setIP(byte ip[]);
+	void setMac(byte mac[]);
+	void setSubMask(byte mask[]);
+	void setIP(byte ip[]);
 	bool Post(long value);
 	bool Post(float value);
 	//bool Post(char* value);
@@ -35,6 +38,10 @@ private:
 	byte* MAC;
 	byte* IP;
 	byte* subMask;
+
+	EthernetClient net;
+
+	void sendHEADER();
 };
 
 } /* namespace yeelink */

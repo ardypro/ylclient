@@ -18,7 +18,7 @@ class ylGenericEthernet
 {
 private:
 	int seconds;
-
+	char* apiKey;
 	int activeSensorID;
 	int activeDeviceID;
 
@@ -27,6 +27,7 @@ private:
 protected:
 	//json* getAPIHeader();
 	//json* getJSONStr();
+	void virtual sendHEADER()=0;
 public:
 	ylGenericEthernet();
 	virtual ~ylGenericEthernet();
@@ -47,11 +48,19 @@ public:
 	void virtual setIP(byte ip[]);
 	void virtual setSubMask(byte mask[]);
 
+//	void virtual setAPIKey(char* key);
+//	virtual char* getAPIKey();
+//	void virtual setActiveSensor(int sensorid);
+//	int virtual getActiveSensor();
+//	void virtual setActiveDevice(int deviceid);
+//	int virtual getActiveDevice();
+
+	void setAPIKey(char* key);
+	char* getAPIKey();
 	void setActiveSensor(int sensorid);
 	int getActiveSensor();
 	void setActiveDevice(int deviceid);
 	int getActiveDevice();
-
 //TODO 后续版本支持的功能
 	//virtual int Available()=0;
 	//virtual char Read()=0;

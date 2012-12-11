@@ -44,4 +44,5 @@
 //调试状态，正式版本应该置为RELEASE版本，直接注释掉下面预定义即可
 #define _DEBUG_					//调试状态
 
+#define DEFAULTAPIKEY "89501b438791e28f74c21035a88fffd2" //默认的APIKEY
 #endif /* YLCONF_H_ */

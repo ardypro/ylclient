@@ -17,13 +17,14 @@ class ylSerialHTTP: public yeelink::ylGenericEthernet
 {
 private:
 	HardwareSerial* serial;
+	void sendFlag();
 public:
 	ylSerialHTTP();
 	virtual ~ylSerialHTTP();
 
 	void setSerialIndex(byte serialIndex);
 
-	bool connect();
+	//bool connect();
 	bool Post(long value);
 	bool Post(float value);
 	//bool Post(char* value);

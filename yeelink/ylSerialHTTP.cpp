@@ -36,21 +36,26 @@ ylSerialHTTP::~ylSerialHTTP()
 	// TODO Auto-generated destructor stub
 }
 
-bool ylSerialHTTP::connect()
+//bool ylSerialHTTP::connect()
+//{
+//	serial->println("serial port is connecting");
+//	return true;
+//}
+
+void ylSerialHTTP::sendFlag()
 {
-	serial->println("serial port is connecting");
-	return true;
+	serial->print("\"value\":");
 }
 
 bool ylSerialHTTP::Post(long value)
 {
-	//sendValueflag();
+	sendFlag();
 	return serial->print(value);
 }
 
 bool ylSerialHTTP::Post(float value)
 {
-	//sendValueflag();
+	sendFlag();
 	return serial->print(value);
 }
 

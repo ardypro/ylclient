@@ -25,9 +25,9 @@ class ylclient
 {
 private:
 	char* _apikey;
-	ETHERNETCARD _cardtype;
+	//ETHERNETCARD _cardtype;
 	bool _connected;
-	char* _apiver;
+	//char* _apiver;
 	int _activedeviceid;
 	int _activesensorid;
 
@@ -45,13 +45,12 @@ public:
 	 bool connected();				//连接状态
 	 */
 	void setAPIKey(String APIKey);	//设置APIKEY
-
+	void setAPIKey(char* APIKey);
 	//使用含义更加明显的方法名称 2012-12-07
 	void setMACAddress(byte mac[]);
 	void setIPAddress(byte ip[]);
 	void setSubMask(byte mask[]);
 	void setSerialIndex(byte index);
-
 
 	//设置设备与传感器
 	bool setActiveDevice(int deviceid);
