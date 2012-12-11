@@ -26,7 +26,7 @@ public:
 
 	//bool connect();
 	bool Post(long value);
-	bool Post(float value, int decimal=2);
+	bool Post(float value);
 	//bool Post(char* value);
 
 	bool postKeyValue(char* key, char* value);

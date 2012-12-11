@@ -80,7 +80,7 @@ bool ylclient::Post(char* value)
 	return 0;
 }
 
-bool ylclient::Post(float value, int decimal)
+bool ylclient::Post(float value)
 {
 	return net->Post(value);
 }

@@ -33,7 +33,7 @@ public:
 	virtual ~ylGenericEthernet();
 
 	virtual bool Post(long value)=0;
-	virtual bool Post(float value, int decimal=2)=0;
+	virtual bool Post(float value)=0;
 	//virtual bool Post(char* value)=0;
 	//virtual bool Post(String value)=0;
 	//virtual bool Post(int value)=0;
@@ -47,6 +47,13 @@ public:
 	void virtual setMac(byte mac[]);
 	void virtual setIP(byte ip[]);
 	void virtual setSubMask(byte mask[]);
+
+//	void virtual setAPIKey(char* key);
+//	virtual char* getAPIKey();
+//	void virtual setActiveSensor(int sensorid);
+//	int virtual getActiveSensor();
+//	void virtual setActiveDevice(int deviceid);
+//	int virtual getActiveDevice();
 
 	void setAPIKey(char* key);
 	char* getAPIKey();

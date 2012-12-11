@@ -10,7 +10,16 @@ ylW5100Ethernet.d ylW5100Ethernet.o: ../ylW5100Ethernet.cpp \
  /usr/share/arduino/hardware/arduino/cores/arduino/Printable.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/new.h \
  /usr/share/arduino/hardware/arduino/variants/standard/pins_arduino.h \
- ../ylconst.h /usr/share/arduino/libraries/SPI/SPI.h
+ ../ylconst.h /usr/share/arduino/libraries/SPI/SPI.h \
+ /usr/share/arduino/libraries/Ethernet/Ethernet.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Printable.h \
+ /usr/share/arduino/libraries/Ethernet/EthernetClient.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Print.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Client.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h \
+ /usr/share/arduino/libraries/Ethernet/EthernetServer.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Server.h
 
 ../ylW5100Ethernet.h:
 
@@ -41,3 +50,21 @@ ylW5100Ethernet.d ylW5100Ethernet.o: ../ylW5100Ethernet.cpp \
 ../ylconst.h:
 
 /usr/share/arduino/libraries/SPI/SPI.h:
+
+/usr/share/arduino/libraries/Ethernet/Ethernet.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Printable.h:
+
+/usr/share/arduino/libraries/Ethernet/EthernetClient.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Print.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Client.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:
+
+/usr/share/arduino/libraries/Ethernet/EthernetServer.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Server.h:

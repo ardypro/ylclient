@@ -1,0 +1,31 @@
+/*
+ * ylGenericHardwareEthernet.h
+ *
+ *  Created on: 2012-12-11
+ *      Author: ardypro
+ */
+
+#ifndef YLGENERICHARDWAREETHERNET_H_
+#define YLGENERICHARDWAREETHERNET_H_
+
+#include "ylGenericEthernet.h"
+
+namespace yeelink
+{
+
+class ylGenericHardwareEthernet: public yeelink::ylGenericEthernet
+{
+public:
+	ylGenericHardwareEthernet();
+	virtual ~ylGenericHardwareEthernet();
+
+	void virtual connect(void)=0;
+
+protected:
+	bool connected;
+
+
+};
+
+} /* namespace yeelink */
+#endif /* YLGENERICHARDWAREETHERNET_H_ */

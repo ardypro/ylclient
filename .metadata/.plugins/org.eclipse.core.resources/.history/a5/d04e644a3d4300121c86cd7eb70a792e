@@ -27,7 +27,7 @@ public:
 	void setSubMask(byte mask[]);
 	void setIP(byte ip[]);
 	bool Post(long value);
-	bool Post(float value, int decimal=2);
+	bool Post(float value);
 	//bool Post(char* value);
 	//bool Post(String value);
 	//bool Post(int value);
@@ -42,9 +42,6 @@ private:
 	EthernetClient net;
 
 	void sendHEADER();
-	int getLength(long value);
-	int getLength(float value);
-
 };
 
 } /* namespace yeelink */

@@ -1,0 +1,24 @@
+/*
+ * ylGenericHardwareEthernet.cpp
+ *
+ *  Created on: 2012-12-11
+ *      Author: ardypro
+ */
+
+#include "ylGenericHardwareEthernet.h"
+
+namespace yeelink
+{
+
+ylGenericHardwareEthernet::ylGenericHardwareEthernet()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+ylGenericHardwareEthernet::~ylGenericHardwareEthernet()
+{
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace yeelink */

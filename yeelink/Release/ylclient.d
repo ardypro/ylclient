@@ -11,7 +11,16 @@ ylclient.d ylclient.o: ../ylclient.cpp ../ylclient.h \
  /usr/share/arduino/hardware/arduino/cores/arduino/new.h \
  /usr/share/arduino/hardware/arduino/variants/standard/pins_arduino.h \
  ../ylGenericEthernet.h ../ylW5100Ethernet.h \
- /usr/share/arduino/libraries/SPI/SPI.h
+ /usr/share/arduino/libraries/SPI/SPI.h \
+ /usr/share/arduino/libraries/Ethernet/Ethernet.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Printable.h \
+ /usr/share/arduino/libraries/Ethernet/EthernetClient.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Print.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Client.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h \
+ /usr/share/arduino/libraries/Ethernet/EthernetServer.h \
+ /usr/share/arduino/hardware/arduino/cores/arduino/Server.h
 
 ../ylclient.h:
 
@@ -46,3 +55,21 @@ ylclient.d ylclient.o: ../ylclient.cpp ../ylclient.h \
 ../ylW5100Ethernet.h:
 
 /usr/share/arduino/libraries/SPI/SPI.h:
+
+/usr/share/arduino/libraries/Ethernet/Ethernet.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Printable.h:
+
+/usr/share/arduino/libraries/Ethernet/EthernetClient.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Print.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Client.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:
+
+/usr/share/arduino/libraries/Ethernet/EthernetServer.h:
+
+/usr/share/arduino/hardware/arduino/cores/arduino/Server.h:

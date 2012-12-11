@@ -21,7 +21,7 @@ ylW5100Ethernet::~ylW5100Ethernet()
 	// TODO Auto-generated destructor stub
 }
 
-bool ylW5100Ethernet::Post(float value, int decimal)
+bool ylW5100Ethernet::Post(float value)
 {
 	bool r;
 	if (connect())

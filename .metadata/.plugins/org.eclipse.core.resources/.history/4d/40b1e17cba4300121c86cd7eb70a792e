@@ -53,7 +53,7 @@ bool ylSerialHTTP::Post(long value)
 	return serial->print(value);
 }
 
-bool ylSerialHTTP::Post(float value, int decimal)
+bool ylSerialHTTP::Post(float value)
 {
 	sendFlag();
 	return serial->print(value);

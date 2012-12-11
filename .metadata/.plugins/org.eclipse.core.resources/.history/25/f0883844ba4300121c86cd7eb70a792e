@@ -58,7 +58,7 @@ public:
 
 	//发布数据方法
 	bool Post(long value);
-	bool Post(float value, int decimal=2);
+	bool Post(float value);
 	bool Post(bool value);
 	bool Post(char* value);
 

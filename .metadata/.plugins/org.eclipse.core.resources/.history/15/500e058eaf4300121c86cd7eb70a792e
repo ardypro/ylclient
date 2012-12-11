@@ -21,7 +21,7 @@ ylW5100Ethernet::~ylW5100Ethernet()
 	// TODO Auto-generated destructor stub
 }
 
-bool ylW5100Ethernet::Post(float value, int decimal)
+bool ylW5100Ethernet::Post(float value)
 {
 	bool r;
 	if (connect())
@@ -81,13 +81,11 @@ void ylW5100Ethernet::sendHEADER()
 	net.println(getAPIKey());
 	net.print("Content-Length: ");
 
-	String str="23.5";
-
 }
 
 int ylW5100Ethernet::getLength(float value)
 {
-Serial.print(23.2);
+
 }
 
 int ylW5100Ethernet::getLength(long value)

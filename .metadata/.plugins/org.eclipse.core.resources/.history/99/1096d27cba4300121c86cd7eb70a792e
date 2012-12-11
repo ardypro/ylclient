@@ -33,7 +33,7 @@ public:
 	virtual ~ylGenericEthernet();
 
 	virtual bool Post(long value)=0;
-	virtual bool Post(float value, int decimal=2)=0;
+	virtual bool Post(float value)=0;
 	//virtual bool Post(char* value)=0;
 	//virtual bool Post(String value)=0;
 	//virtual bool Post(int value)=0;
