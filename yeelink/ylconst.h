@@ -40,13 +40,6 @@ const int INVALID_DEVICEID = 11;
 const int INVALID_SENSORID = 12;
 const int SERIALPORT_BUSY = 13;
 
-//yeelink服务器地址
-#define APISERVER  "api.yeelink.net"
-
-//API版本号
-#define APIVERSION "v1.0"
-
-#define MACLENGTH 6 //Mac address length
-#define IPLENGTH 4
+//const char* APIV ="A";
 
 #endif /* YLCONST_H_ */

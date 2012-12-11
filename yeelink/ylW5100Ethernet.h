@@ -43,7 +43,7 @@ private:
 
 	void sendHEADER();
 	int getLength(long value);
-	int getLength(float value);
+	int getLength(float value, int decimal=2);
 
 };
 

@@ -39,6 +39,7 @@ bool ylW5100Ethernet::Post(long value)
 	float f;
 	f = value * 1.0;
 	sendHEADER();
+
 	return Post(f);
 }
 
@@ -65,7 +66,7 @@ void ylW5100Ethernet::setIP(byte ip[])
 void ylW5100Ethernet::sendHEADER()
 {
 	net.print("POST /");
-	net.print((char*) APIVERSION);
+	net.print(APIVERSION);
 	net.print("/device/");
 	net.print(getActiveDevice());
 	net.print("/sensor/");
@@ -81,18 +82,37 @@ void ylW5100Ethernet::sendHEADER()
 	net.println(getAPIKey());
 	net.print("Content-Length: ");
 
-	String str="23.5";
+
 
 }
 
-int ylW5100Ethernet::getLength(float value)
+int ylW5100Ethernet::getLength(float value, int decimal)
 {
-Serial.print(23.2);
+	char buf[MAXFLOATLENGTH]=""; //
+	dtostrf(value,1,decimal,buf);
+
+	int i=0;
+	while (buf[i])
+		i++;
+
+	return i++;
 }
 
 int ylW5100Ethernet::getLength(long value)
 {
-
+	   int digits = 1;
+	    if (value<0)
+	    {
+	        digits++;
+	        value=-value;
+	    }
+	    int dividend = value /10;
+	    while (dividend > 0)
+	    {
+	        dividend = dividend /10;
+	        digits++;
+	    }
+	    return digits;
 }
 
 } /* namespace yeelink */

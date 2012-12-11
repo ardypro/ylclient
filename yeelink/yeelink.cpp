@@ -7,6 +7,7 @@ using namespace yeelink;
 
 ylclient client;
 
+const char* a="a";
 
 
 //The setup function is called once at startup of the sketch
