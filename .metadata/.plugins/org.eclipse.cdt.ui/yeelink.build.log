@@ -1,7 +1,0 @@
-04:05:48 **** Clean-only build of configuration Release for project yeelink ****
-make clean 
-rm -rf  ./SPI/SPI.o  ./Ethernet/utility/socket.o ./Ethernet/utility/w5100.o  ./Ethernet/Dhcp.o ./Ethernet/Dns.o ./Ethernet/Ethernet.o ./Ethernet/EthernetClient.o ./Ethernet/EthernetServer.o ./Ethernet/EthernetUdp.o  ./yeelink.o ./ylGenericEthernet.o ./ylSerialHTTP.o ./ylW5100Ethernet.o ./ylclient.o  yeelink.eep  yeelink.hex  yeelink.lss  ./SPI/SPI.d  ./Ethernet/utility/socket.d ./Ethernet/utility/w5100.d  ./Ethernet/Dhcp.d ./Ethernet/Dns.d ./Ethernet/Ethernet.d ./Ethernet/EthernetClient.d ./Ethernet/EthernetServer.d ./Ethernet/EthernetUdp.d  ./yeelink.d ./ylGenericEthernet.d ./ylSerialHTTP.d ./ylW5100Ethernet.d ./ylclient.d  sizedummy  yeelink.elf
- 
-
-04:05:48 Build Finished (took 221ms)
-

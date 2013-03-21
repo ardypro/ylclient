@@ -1,8 +1,0 @@
-04:05:48 **** Clean-only build of configuration Release for project Arduino_Duemilanove_w__ATmega328 ****
-make clean 
-rm -rf  ./arduino/CDC.o ./arduino/HID.o ./arduino/HardwareSerial.o ./arduino/IPAddress.o ./arduino/Print.o ./arduino/Stream.o ./arduino/Tone.o ./arduino/USBCore.o ./arduino/WInterrupts.o ./arduino/WMath.o ./arduino/WString.o ./arduino/main.o ./arduino/new.o ./arduino/wiring.o ./arduino/wiring_analog.o ./arduino/wiring_digital.o ./arduino/wiring_pulse.o ./arduino/wiring_shift.o  ./arduino/WInterrupts.d ./arduino/wiring.d ./arduino/wiring_analog.d ./arduino/wiring_digital.d ./arduino/wiring_pulse.d ./arduino/wiring_shift.d  libArduino_Duemilanove_w__ATmega328.lss  ./arduino/CDC.d ./arduino/HID.d ./arduino/HardwareSerial.d ./arduino/IPAddress.d ./arduino/Print.d ./arduino/Stream.d ./arduino/Tone.d ./arduino/USBCore.d ./arduino/WMath.d ./arduino/WString.d ./arduino/main.d ./arduino/new.d  sizedummy  libArduino_Duemilanove_w__ATmega328.a
- 
-04:05:48 **** Clean-only build of configuration Release for project yeelink ****
-make clean 
-rm -rf  ./SPI/SPI.o  ./Ethernet/utility/socket.o ./Ethernet/utility/w5100.o  ./Ethernet/Dhcp.o ./Ethernet/Dns.o ./Ethernet/Ethernet.o ./Ethernet/EthernetClient.o ./Ethernet/EthernetServer.o ./Ethernet/EthernetUdp.o  ./yeelink.o ./ylGenericEthernet.o ./ylSerialHTTP.o ./ylW5100Ethernet.o ./ylclient.o  yeelink.eep  yeelink.hex  yeelink.lss  ./SPI/SPI.d  ./Ethernet/utility/socket.d ./Ethernet/utility/w5100.d  ./Ethernet/Dhcp.d ./Ethernet/Dns.d ./Ethernet/Ethernet.d ./Ethernet/EthernetClient.d ./Ethernet/EthernetServer.d ./Ethernet/EthernetUdp.d  ./yeelink.d ./ylGenericEthernet.d ./ylSerialHTTP.d ./ylW5100Ethernet.d ./ylclient.d  sizedummy  yeelink.elf
- 
