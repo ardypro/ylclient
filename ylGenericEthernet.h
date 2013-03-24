@@ -1,6 +1,6 @@
 /*
  * ylGenericEthernet.h
- *
+ * 抽象的网卡类，为W5100、ENC28J60或者串口代理工具的基类
  *  Created on: 2012-11-26
  *      Author: ardypro
  */

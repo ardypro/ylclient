@@ -1,6 +1,6 @@
 /*
  * ylSerialHTTP.h
- *
+ * 串口代理工具类
  *  Created on: 2012-11-26
  *      Author: ardypro
  */

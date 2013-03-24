@@ -18,9 +18,9 @@ typedef char json;
 
 //网络模块类型，最后一种是串口转HTTP代理工具
 enum ETHERNETCARD {
-	W5100, 				//W5100网络模块
+	W5100, 				    //W5100网络模块
 	ENC28J60,				//ENC28J60网络模块
-	SERIALOVERHTTP		//电脑串口代理工具，需要指定串口号（1,2,3）
+	SERIALOVERHTTP		    //电脑串口代理工具，需要指定串口号（1,2,3）
 };
 
 enum SENSORTYPE {

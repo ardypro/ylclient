@@ -1,6 +1,6 @@
 /*
  * ylW5100Ethernet.h
- *
+ *  W5100网络模块类
  *  Created on: 2012-12-4
  *      Author: ardypro
  */
